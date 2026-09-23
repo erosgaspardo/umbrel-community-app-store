@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: cherubino-whisparr
+storage:
+  dataRoot: data
+category: media
+icon: https://raw.githubusercontent.com/mathieuletyrant/umbrel-community-app-store/master/mathieu-slskd/icon.png
+name: Whisparr
+version: v3.6.1-release.1708
+tagline: Automated adult video collection manager
+description: Whisparr is an *arr-style media collection manager. This package tracks
+  the v3/Eros Docker release line, which is based on Radarr and focuses on scenes
+  while also supporting movies. It integrates with common download clients and keeps
+  a predictable library layout.
+developer: Whisparr
+website: https://github.com/Whisparr/Whisparr
+dependencies: []
+repo: https://github.com/Whisparr/Whisparr
+support: https://github.com/Whisparr/Whisparr/issues
+port: 6969
+gallery: []
+path: ''
+defaultUsername: ''
+defaultPassword: ''
+releaseNotes: Packaged against Whisparr v3.6.1-release.1708 from the Eros/v3 Docker
+  line, the current v3 release verified on 2026-09-23.
+permissions:
+- STORAGE_DOWNLOADS
+submitter: Cherubino

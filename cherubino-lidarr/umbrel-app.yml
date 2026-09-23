@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: cherubino-lidarr
+storage:
+  dataRoot: data
+category: media
+icon: https://raw.githubusercontent.com/mathieuletyrant/umbrel-community-app-store/master/mathieu-slskd/icon.png
+name: Lidarr
+version: 3.1.0.4875
+tagline: Looks and smells like Sonarr but made for music
+description: Lidarr is a music collection manager for Usenet and BitTorrent users.
+  It can monitor RSS feeds for new albums from your favorite artists and interface
+  with download clients and indexers to grab, sort, and rename releases. This package
+  also exposes a shared /downloads path and /media library path so it works cleanly
+  with the other Cherubino apps.
+developer: Lidarr
+website: https://lidarr.audio/
+dependencies: []
+repo: https://github.com/Lidarr/Lidarr
+support: https://github.com/Lidarr/Lidarr/issues
+port: 8686
+gallery: []
+path: ''
+defaultUsername: ''
+defaultPassword: ''
+releaseNotes: Packaged against Lidarr 3.1.0.4875, the latest stable release line used
+  by the current official Umbrel Lidarr package at the time this store was built.
+permissions:
+- STORAGE_DOWNLOADS
+submitter: Cherubino

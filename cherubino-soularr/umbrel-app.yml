@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: cherubino-soularr
+storage:
+  dataRoot: data
+category: media
+icon: https://raw.githubusercontent.com/mathieuletyrant/umbrel-community-app-store/master/mathieu-soularr/icon.png
+name: Soularr
+version: 1.2.2
+tagline: Automate Lidarr music downloads through Soulseek
+description: Soularr connects Lidarr with slskd. It reads wanted albums and artists
+  from Lidarr, searches Soulseek through slskd, and feeds completed downloads back
+  into Lidarr for import. A browser-based config editor is included.
+developer: mrusse
+website: https://github.com/mrusse/soularr
+dependencies:
+- cherubino-lidarr
+- cherubino-slskd
+repo: https://github.com/mrusse/soularr
+support: https://github.com/mrusse/soularr/issues
+port: 8265
+gallery: []
+path: ''
+defaultUsername: ''
+defaultPassword: ''
+releaseNotes: Packaged against Soularr v1.2.2. The release adds WEBUI_PORT support
+  and retains the browser-based config editor introduced in v1.2.0.
+permissions:
+- STORAGE_DOWNLOADS
+submitter: Cherubino

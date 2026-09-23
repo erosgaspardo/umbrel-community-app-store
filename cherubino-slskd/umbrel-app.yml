@@ -1,0 +1,41 @@
+manifestVersion: 1
+id: cherubino-slskd
+storage:
+  dataRoot: data
+category: media
+icon: https://raw.githubusercontent.com/mathieuletyrant/umbrel-community-app-store/master/mathieu-slskd/icon.png
+name: slskd
+version: 0.26.0
+tagline: A modern Soulseek client-server with a web UI
+description: slskd is a modern client-server application for the Soulseek file sharing
+  network. It provides a browser-based UI, queued downloads, browsing, chat, and an
+  API that Soularr can use to automate Lidarr downloads.
+developer: slskd
+website: https://slskd.org/
+dependencies: []
+repo: https://github.com/slskd/slskd
+support: https://github.com/slskd/slskd/issues
+port: 5030
+gallery: []
+path: ''
+defaultUsername: slskd
+defaultPassword: slskd
+environment:
+  - name: SLSKD_SLSK_USERNAME
+    services:
+      - server
+    note: Your Soulseek network username.
+  - name: SLSKD_SLSK_PASSWORD
+    services:
+      - server
+    note: Your Soulseek network password.
+  - name: SLSKD_SHARED_DIR
+    services:
+      - server
+    default: /downloads/music
+    note: Folder to share with the Soulseek network, as seen inside the container.
+releaseNotes: Packaged against slskd 0.26.0, the latest stable release verified when
+  this store was generated.
+permissions:
+- STORAGE_DOWNLOADS
+submitter: Cherubino

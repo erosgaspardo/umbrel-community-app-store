@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: cherubino-stash_server_1
+      APP_PORT: 9999
+
+  server:
+    image: stashapp/stash:v0.31.1
+    environment:
+      - STASH_STASH=/data/
+      - STASH_GENERATED=/generated/
+      - STASH_METADATA=/metadata/
+      - STASH_CACHE=/cache/
+      - STASH_PORT=9999
+      - TZ=Europe/Paris
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/root/.stash
+      - ${APP_DATA_DIR}/data/metadata:/metadata
+      - ${APP_DATA_DIR}/data/cache:/cache
+      - ${APP_DATA_DIR}/data/blobs:/blobs
+      - ${APP_DATA_DIR}/data/generated:/generated
+      - ${UMBREL_ROOT}/data/storage/downloads:/data
+    restart: on-failure
